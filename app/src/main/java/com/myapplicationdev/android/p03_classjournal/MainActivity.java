@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         tvC347.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                Weeks week1 = new Weeks("week 1","B");
                 Intent i = new Intent(MainActivity.this,InfoforC347.class);
                 startActivity(i);
 

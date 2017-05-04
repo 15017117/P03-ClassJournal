@@ -16,7 +16,7 @@ public class Weeks {
 
 
     public String getGrade() {
-        return getGrade();
+        return grade;
     }
 
     public Weeks(String week, String grade) {
@@ -24,4 +24,6 @@ public class Weeks {
 
         this.grade = grade;
     }
+
+
 }
