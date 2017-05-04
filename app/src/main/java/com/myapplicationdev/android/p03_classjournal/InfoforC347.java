@@ -1,6 +1,7 @@
 package com.myapplicationdev.android.p03_classjournal;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +15,7 @@ public class InfoforC347 extends AppCompatActivity {
     ListView lvMenu;
     ArrayAdapter aa;
     ArrayList<Weeks> week ;
+    Button info;
 
 
 
@@ -23,6 +25,7 @@ public class InfoforC347 extends AppCompatActivity {
         setContentView(R.layout.activity_infofor_c347);
 
         lvMenu = (ListView)this.findViewById(R.id.lvMenu);
+        info = (Button)findViewById(R.id.buttonInfo);
         Button btnEmail = (Button) findViewById(R.id.buttonEmail);
         Intent i = getIntent();
 
@@ -50,6 +53,18 @@ public class InfoforC347 extends AppCompatActivity {
                 email.setType("message/rcf822");
                 startActivity(Intent.createChooser(email, "Choose an Email Client: "));
 
+
+            }
+        });
+
+        info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent rpIntent = new Intent(Intent.ACTION_VIEW);
+
+                rpIntent.setData(Uri.parse("http://www.rp.edu.sg"));
+                startActivity(rpIntent);
 
             }
         });
