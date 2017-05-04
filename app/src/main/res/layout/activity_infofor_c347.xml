@@ -5,16 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.myapplicationdev.android.p03_classjournal.MainActivity">
+    tools:context="com.myapplicationdev.android.p03_classjournal.InfoforC347">
 
-
-    <TextView
-        android:id="@+id/textViewC347"
+    <ListView
+        android:id="@+id/lvMenu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="C347"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:layout_height="match_parent" />
 </LinearLayout>
