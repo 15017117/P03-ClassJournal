@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InfoforC347"></activity>
+        <activity android:name=".InfoforC347" />
+        <activity android:name=".addData"></activity>
     </application>
 
 </manifest>
