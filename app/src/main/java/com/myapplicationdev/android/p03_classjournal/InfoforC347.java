@@ -26,6 +26,8 @@ public class InfoforC347 extends AppCompatActivity {
 
         week = new ArrayList<Weeks>();
         week.add(new Weeks("week 1","B"));
+        week.add(new Weeks("week 2","C"));
+        week.add(new Weeks("week 3","A"));
         aa = new WeeksAdapter(this,R.layout.row,week);
         lvMenu.setAdapter(aa);
 

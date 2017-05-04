@@ -25,5 +25,11 @@ public class Weeks {
         this.grade = grade;
     }
 
-
+    public void setWeek(String week)
+    {
+        this.week = week;
+    }
+    public void setGrade(String grade ){
+        this.grade =grade;
+    }
 }
